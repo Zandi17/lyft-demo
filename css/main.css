@@ -1,0 +1,36 @@
+.load{
+	background-image: url("../img/load.png");
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+}
+/*fin de load*/
+.portada{
+	background-image: url("../img/lyft.png");
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+}
+
+.boton{
+	bottom: 12%;
+    font-size: 20px;
+	position: absolute;
+	margin: -5%;
+	width: 40%;
+}
+.login{
+	background-color: transparent;
+	border-color: white;
+	color: white;
+	left: 10%;	
+}
+.singup{
+	background-color: #c73cbe;
+	border-color: white;
+	color:white;
+	right: 10%;
+}
+
+/*fin del index*/
+
