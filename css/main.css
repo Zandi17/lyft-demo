@@ -39,4 +39,45 @@
 }
 
 /*fin del index*/
-
+a{
+	text-decoration:none;
+}
+.atras{
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	margin-top: 4%;
+	left: 10%;
+}
+.titulo{
+	font-size: 20px;
+    font-weight: bold;
+    margin: 4% 35%;
+}
+.centro{
+	text-align: center;
+}
+.elegirPais{
+	width: 2rem;
+}	
+#ingreseCodigo{
+	display: inline-block;
+    float: left;
+    width: 58%;
+}
+.parrafo{
+	float: left;
+    margin-top: 2rem;
+}
+.next{
+	color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+footer{
+    background-color: #f3038e;
+    position: absolute;
+    height: 5rem;
+    width: 100%;
+    bottom: 0px;
+}
