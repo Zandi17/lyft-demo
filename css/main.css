@@ -1,8 +1,10 @@
-.load{
-	background: url("../img/load.png");
-	background-size: cover;
-	position: relative;
-	height: 100vh;
+.load {
+    background: url(../img/load.png);
+    background-size: cover;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 200;
 }
 /*fin de load*/
 .portada{

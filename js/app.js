@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".load").fadeOut("slow");
+    $(".load").fadeOut(3000);
 });
 
 
