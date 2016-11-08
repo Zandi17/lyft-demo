@@ -14,7 +14,10 @@
 	position: relative;
 	height: 100vh;
 }
-
+.logo{
+	width: 13rem;
+    margin-left: 10rem;
+}
 .boton{
 	bottom: 12%;
     font-size: 20px;

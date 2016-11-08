@@ -8,6 +8,10 @@
 
 ## Versión 2 Login  
 
-2.- En el app aparecera bien un gif, video o fondo y los logins para ingresar al app.  
+1.- En el app aparecera bien un gif, video o fondo y los logins para ingresar al app.  
 
-![cara2](http://i66.tinypic.com/eqzdkl.png)  
+![cara2](http://i66.tinypic.com/eqzdkl.png)
+
+## Versión 3 Validar número  
+
+1.- 
