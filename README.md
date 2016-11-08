@@ -6,7 +6,7 @@
 
 ![cara1](http://i64.tinypic.com/904ojs.png)  
 
-## Versión 1 Login  
+## Versión 2 Login  
 
 2.- En el app aparecera bien un gif, video o fondo y los logins para ingresar al app.  
 
