@@ -1,13 +1,14 @@
 .load{
-	background-image: url("../img/load.png");
+	background: url("../img/load.png");
 	background-size: cover;
 	position: relative;
 	height: 100vh;
 }
 /*fin de load*/
 .portada{
-	background-image: url("../img/lyft.png");
+	background: url("../img/giphy.gif");
 	background-size: cover;
+	background-position: center;
 	position: relative;
 	height: 100vh;
 }
