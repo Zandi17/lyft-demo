@@ -15,22 +15,22 @@ $(document).ready(function() {
 
 	// var numeros = "12344567890":
 
-	// $("#ingreseCodigo").keypress(function(e){;
-	// 	// se obtiene el caracter
-	// 	var caracter = String.fromCharCode(e.which);
-	// 	// busca caracter en el patrón
-	// 	if(numeros.indexOf(caracter)< 0){ 
-	// 	return false; //Evita que se escriba en caracter
-	// 	}
+		// $("#ingreseCodigo").keypress(function(e){;
+		// 	// se obtiene el caracter
+		// 	var caracter = String.fromCharCode(e.which);
+		// 	// busca caracter en el patrón
+		// 	if(numeros.indexOf(caracter)< 0){ 
+		// 	return false; //Evita que se escriba en caracter
+		// 	}
 	// });
 
 // 	$("#ingreseCodigo").keyup(function (event) {
-//     var num = parseInt($(this).val(), 9);
-//     $(this).val('');
-//     if (typeof num === "number" && num < 11 && num > -1) {
-//         $(this).val(num);
-//     }
-// });
+//    	 var num = parseInt($(this).val(), 9);
+	//     $(this).val('');
+	//     if (typeof num === "number" && num < 11 && num > -1) {
+	//         $(this).val(num);
+	//     }
+// 		});
 });
 
 
