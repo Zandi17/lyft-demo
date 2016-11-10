@@ -1,14 +1,16 @@
 $(document).ready(function() {
     $(".load").fadeOut(3000);
+	
+	var numeros = "12344567890":
 
-	$("#ingreseCodigo").keydown(validar);
-		var validar = function(e){
-		var tecla = e.keyCode;
-		if((tecla >= 48 && tecla <= 57) || tecla == 8){
-		return true;
-		}else 
-		return false;
+	$("#ingreseCodigo").keypress(function(e){;
+		// se obtiene el caracter
+		var caracter = String.fromCharCode(e.which);
+		// busca caracter en el patrón
+		if(numeros.indexOf(caracter)< 0){ 
+		return false; //Evita que se escriba en caracter
 		}
+	});
 });
 
 
