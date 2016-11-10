@@ -1,16 +1,36 @@
 $(document).ready(function() {
     $(".load").fadeOut(3000);
 	
-	var numeros = "12344567890":
+	var entra = true;
+	var conta = 0;
 
 	$("#ingreseCodigo").keypress(function(e){;
-		// se obtiene el caracter
-		var caracter = String.fromCharCode(e.which);
-		// busca caracter en el patrón
-		if(numeros.indexOf(caracter)< 0){ 
-		return false; //Evita que se escriba en caracter
+		var tecla = e.keyCode;
+		if((tecla >= 48 && tecla <= 57) || tecla == 8){
+			return true;
 		}
+		else 
+			return false;
 	});
+
+	// var numeros = "12344567890":
+
+	// $("#ingreseCodigo").keypress(function(e){;
+	// 	// se obtiene el caracter
+	// 	var caracter = String.fromCharCode(e.which);
+	// 	// busca caracter en el patrón
+	// 	if(numeros.indexOf(caracter)< 0){ 
+	// 	return false; //Evita que se escriba en caracter
+	// 	}
+	// });
+
+// 	$("#ingreseCodigo").keyup(function (event) {
+//     var num = parseInt($(this).val(), 9);
+//     $(this).val('');
+//     if (typeof num === "number" && num < 11 && num > -1) {
+//         $(this).val(num);
+//     }
+// });
 });
 
 
