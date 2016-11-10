@@ -13,6 +13,19 @@ $(document).ready(function() {
 			return false;
 	});
 
+	$("#ingreseCodigo").text(localStorage.getItem("celular")); 
+
+});
+
+
+
+
+
+
+
+
+
+
 	// var numeros = "12344567890":
 
 		// $("#ingreseCodigo").keypress(function(e){;
@@ -31,17 +44,6 @@ $(document).ready(function() {
 	//         $(this).val(num);
 	//     }
 // 		});
-});
-
-
-
-
-
-
-
-
-
-
 
 
 
