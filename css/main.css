@@ -60,7 +60,7 @@ a{
 .elegirPais{
 	width: 2rem;
 }	
-#ingreseCodigo{
+#ingreseNumero{
 	display: inline-block;
     float: left;
     width: 58%;
@@ -73,6 +73,16 @@ a{
 	color: white;
     font-size: 3rem;
     text-decoration: none;
+}
+.digito{
+	width: 6rem;
+	border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px;
+}
+.pd-top{
+	padding-top: 2rem;
 }
 footer{
     background-color: #f3038e;
