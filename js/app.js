@@ -10,8 +10,10 @@ $(document).ready(function() {
 			return false;
 	});
 
-	$("#celu").text(localStorage.getItem("celular")); 
-
+	$('#next1').click(function(){
+		var tel = document.getElementById("ingreseNumero").value;
+		localStorage.setItem("celular", tel);
+	});
 	$("#ingreseNumero").keyup(function(e){;
 	var caracteres = $(e.target).val().length;
 	var tecla = e.keyCode;
