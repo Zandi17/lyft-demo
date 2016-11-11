@@ -84,6 +84,15 @@ a{
 .pd-top{
 	padding-top: 2rem;
 }
+.digito:hover{
+	color: none;
+}
+.icono{
+	top: 0px;
+}
+.pd{
+	padding: 1rem;
+}
 footer{
     background-color: #f3038e;
     position: absolute;

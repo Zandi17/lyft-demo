@@ -16,10 +16,12 @@ $(document).ready(function() {
 	var caracteres = $(e.target).val().length;
 	var tecla = e.keyCode;
 	if (caracteres == 9){
-		$("#sgt1").click(generarCod);
+		$("#next1").attr("href", "code.html");
+		$("#next1").click(generarCod);
 	}
 	else{
-		$("#sgt1").unbind("click");
+		$("#next1").removeAttr("href");
+		$("#next1").unbind("click");
 	}
 })	
 
