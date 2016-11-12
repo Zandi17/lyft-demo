@@ -36,8 +36,9 @@
     						</ul>
   						</div>
   							<button type="button" class="btn btn-default">+51</button>
-  							<input id="ingreseNumero" type="number" step="any" class="form-control formshadow" maxlength="9" placeholder="987654321" >
-
+  							<form action="form" method="POST" id="formulario">
+  								<input id="ingreseNumero" type="tel" class="form-control formshadow" maxlength="9" placeholder="987654321" name="celular" >
+							</form>
 					</div> 
 			  	</div>
 				<div class="col-xs-12 parrafo">
@@ -46,10 +47,11 @@
 			</div>
 		<footer>
 			<div class="contiener-fluid text-center">
-				<a id="next1" class="next" >Next</a>
+				<a id="btnext" class="next" >Next</a>
 			</div>
 		</footer>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>

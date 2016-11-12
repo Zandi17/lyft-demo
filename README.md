@@ -16,17 +16,4 @@
 
 1.- 
 
-				<div class="row inputIngreso">
-			  <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
-				<form class="form-inline">
-				  <div id="formValidacion" class="form-group">
-				  	<div class="display"> LAB -</div>	
-				    <input id="codForm1" type="text" class="form-control codigo " maxlength="1">
-				    <input id="codForm2" type="text" class="form-control codigo" maxlength="1">
-				    <input id="codForm3" type="text" class="form-control codigo" maxlength="1">
-				  </div>
-			  </form></div>
-			</div>  
-			<p>Enter the code sent </p>		
-			<button type="button" class="btn btn-default btn-lg">Resend code</button>
-			<!--NEXT -->
+			
