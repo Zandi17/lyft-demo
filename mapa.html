@@ -3,17 +3,33 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<!-- <link rel="stylesheet" type="text/css" href="css/materialize.min.css"> -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<title>Lyft</title>
 	</head>
 	<body>
+		<section>
+			<div class="container" id="busqueda">
+				<div class="row">
+				  	<div class="col-xs-12" >
+				    	<div class="input-group" >
+				      		<input type="text" class="form-control" placeholder="Introduce tu dirección">
+				      		<span class="input-group-btn">
+				        		<button class="btn btn-default" type="button">Go!</button>
+				      		</span>
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+		</section>
 		<div id="mapa">
 			
 		</div>
 		 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDITz7VjP-RstGLqSboWe_FEOdQbJpmSPY"
         async defer></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<script type="text/javascript" src="js/gmaps.js"></script>
 		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/geo.js"></script>

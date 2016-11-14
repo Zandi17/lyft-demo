@@ -101,7 +101,11 @@ a{
 	width: 100%;
 	height: 100vh;
 }
-
+#busqueda{
+	position: absolute;
+	bottom: 75px;
+}
+         
 footer{
     background-color: #f3038e;
     position: absolute;
