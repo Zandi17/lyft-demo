@@ -8,7 +8,7 @@ $(document).ready(function() {
     			digits : true,
     			minlength: 9
     		},
-        };    
+        },    
     	messages:{
     		celular:{
     			required:"Ingrese solo Números",
@@ -41,6 +41,23 @@ $(document).ready(function() {
         $("#formulario").submit();
             window.location.href = "register.html";
     });
+    
+    $("#nombre").validate({
+        rules:{
+            nombre: {
+                required: true,
+                digits: false,
+                minlength: 2
+            },
+        },
+        messages:{
+            nombre: {
+                required: "Campo Obligatorio",
+                digits: "Ingresa tu nombre",
+                minlength: "Escriba su nombre"
+              },
+        },
+    })
 
     $("#btnext3").on("click", function(){
         $("#formulario").submit();
@@ -52,37 +69,27 @@ $(document).ready(function() {
 
 
 
+            // apellido: {
+            //     required: true,
+            //     digits: false,
+            //     minlength: 2
+            //   },
+            // email: {
+            //     required: true,
+            //     digits: true,
+            //     minlength: 2
+            // }
 
-        nombre: {
-                required: true,
-                digits: false,
-                minlength: 2
-              },
-            apellido: {
-                required: true,
-                digits: false,
-                minlength: 2
-              },
-            email: {
-                required: true,
-                digits: true,
-                minlength: 2
-            }
-            nombre: {
-                required: "Campo Obligatorio",
-                digits: "Ingresa tu nombre",
-                minlength: "Escriba su nombre"
-              },
-            apellido: {
-                required: "Campo Obligatorio",
-                digits: "Ingresa tu Apellido",
-                minlength: "Escriba su apellido"
-              },
-            email: {
-                required: "El campo es requerido",
-                digits: "Ingresa tu E-mail",
-                minlength: "Escriba su Email",
-            }
+            // apellido: {
+            //     required: "Campo Obligatorio",
+            //     digits: "Ingresa tu Apellido",
+            //     minlength: "Escriba su apellido"
+            //   },
+            // email: {
+            //     required: "El campo es requerido",
+            //     digits: "Ingresa tu E-mail",
+            //     minlength: "Escriba su Email",
+            // }
 
 
 
