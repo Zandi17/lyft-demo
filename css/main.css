@@ -93,6 +93,11 @@ a{
 .pd{
 	padding: 1rem;
 }
+#nombre,
+#apellido{
+	width: 14rem;
+}
+
 footer{
     background-color: #f3038e;
     position: absolute;

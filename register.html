@@ -26,20 +26,18 @@
 		<section>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="form-group two-fields">
+					<div class="form-group">
 				        <div class="input-group">
-				        	<span class="input-group-addon glyphicon glyphicon-user icono"></span>
-							<input type="text" required="" class="form-control input" id="nomb" placeholder="First name">
-							<input type="text" required="" class="form-control input" id="apell" placeholder="Last name">
+				        	<span class="input-group-addon icono"><i class="glyphicon glyphicon-user "></i></span>
+							<input type="text" class="form-control ipt-w" id="nombre" placeholder="First name" name="nombre">
+							<input type="text" class="form-control ipt-w" id="apellido" placeholder="Last name" name="apellido">
 				        </div>
 			      	</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12">
-						<div class="input-group">
-    						<span class="input-group-addon glyphicon glyphicon-envelope icono"></span>
-    						<input type="text" class="form-control input" id="email" placeholder="Email">
-						</div>
+					<div class="input-group">
+    					<span class="input-group-addon glyphicon glyphicon-envelope icono"></span>
+    					<input type="text" class="form-control " id="email" placeholder="Email" name="email">
 					</div>
 				</div>
 				<div class="row text-center">
@@ -47,16 +45,43 @@
 						<label class="checkbox-inline pd"><input type="checkbox" id="checkbox">I agree to Lyft's <a href="#">Terms of Service</a></label>
 					</div>
 				</div>
-				<a class="btn next" id="sgt3">Next</a>
 			</div>
-		</section>
 		<footer>
 			<div class="contiener-fluid text-center">
-						<a id="next" class="next" href="#">Next</a>
+				<a id="btnext3" class="next" >Next</a>
 			</div>
 		</footer>
 		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 </html>
 
+<!-- <div class="row inputIngreso">
+			  <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+				<spam class="contenedorInput">
+					<i class="input-group-addon glyphicon glyphicon-user icono" aria-hidden="true"></i>
+					<input id="firstName" class="ingreseName" type="text"  aria-label="..." placeholder="Firts name">
+					<input id="lastName" class="ingreseName" type="text" aria-label="..." placeholder="Last name">
+				</span>
+			  </div>
+			  <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+			  	<p class="contenedorInput">
+					<i class="fa fa-envelope-o iconoUser" aria-hidden="true"></i>
+					<input id="email" class="ingreseEmail " type="text"  aria-label="..." placeholder="Email">
+				</p>
+			  </div>
+			  <div class="col-xs-offset-1 col-xs-10 col-md-offset-1 col-md-10">
+				  <div class="checkbox">
+				    <label>
+				      <input id="checkTerms" type="checkbox"> I agree to Lyft's <span class="CheckTermino">Terms of Service</span>
+				    </label>
+				  </div>		
+				 </div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="contiener-fluid text-center">
+				<a id="btnext3" class="next" href="#">Next</a> -->
+		

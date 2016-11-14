@@ -6,69 +6,78 @@ $(document).ready(function() {
     		celular:{
     			required: true,
     			digits : true,
-    			maxlength: 9
-    		}
+    			minlength: 9
+    		},
+            nombre: {
+                required: true,
+                digits: false,
+                minlength: 2
+              },
+            apellido: {
+                required: true,
+                digits: false,
+                minlength: 2
+              },
+            email: {
+                required: true,
+                digits: true,
+                minlength: 2
+            }
     	},
     	messages:{
     		celular:{
     			required:"Ingrese solo Números",
     			digits:"Ingresa tu Número de celular",
-    			maxlength : "Hasta 9 números"
+    			minlength : "Hasta 9 números"
     		},
+            nombre: {
+                required: "Campo Obligatorio",
+                digits: "Ingresa tu nombre",
+                minlength: "Escriba su nombre"
+              },
+            apellido: {
+                required: "Campo Obligatorio",
+                digits: "Ingresa tu Apellido",
+                minlength: "Escriba su apellido"
+              },
+            email: {
+                required: "El campo es requerido",
+                digits: "Ingresa tu E-mail",
+                minlength: "Escriba su Email",
+            }
     	},
+        submitHandler: function() {
+        window.localStorage.setItem("codigo", Math.floor( Math.random() * 4000 )+1000 )
+        alert("Tu código es " + window.localStorage.getItem("codigo")  + " ");
+        }
     });
-    $("#btnext").on("click", function(){
-    	$("#formulario").submit();
+
+    $("#btnext1").on("click", function(){
+        $("#formulario").submit();
+            if($("#ingreseNumero").val().length == 9){
+                window.localStorage.setItem("celular", $("#ingreseNumero").val());
+                window.location.href = "code.html";
+            }
     });
+    $("#code").on("click", function() {
+        window.localStorage.setItem("codigo", Math.floor( Math.random() * 4000 )+1000 )
+        alert("Tu nuevo código es " + window.localStorage.getItem("codigo")  + " ");
+    })
+
+    $("#celular").text(window.localStorage.getItem("celular"));
+
+    $("#btnext2").on("click", function(){
+        $("#formulario").submit();
+            window.location.href = "register.html";
+    });
+
+    $("#btnext3").on("click", function(){
+        $("#formulario").submit();
+                window.location.href = "mapa.html";
+    });
+
+
 });
-
-//// 	$("#ingreseNumero").keypress(function(e){;
- 		// var tecla = e.keyCode;
-// 		if((tecla >= 48 && tecla <= 57) || tecla == 8){
-// 			return true;
-// 		}
-// 		else 
-// 			return false;
-// 	});
-
-// 	$("#celu").text(localStorage.getItem("celular")); 
-
-
-// 	$("#ingreseNumero").keyup(function(e){;
-// 	var caracteres = $(e.target).val().length;
-// 	var tecla = e.keyCode;
-// 	if (caracteres == 9){
-// 		$("#next1").attr("href", "code.html");
-// 	}
-// 	else{
-// 		$("#next1").removeAttr("href");
-// 	}
-// })	
-
-// 	$("#next1").click(function(){;
-// 	if(entra){
-// 		for (var i = 0; i < 4; i++) {
-// 			var nums = Math.round(Math.random()*9);
-// 			codigo += nums;
-// 		}
-
-// 		alert(codigo);
-
-// 		localStorage.setItem("guardarCod", codigo);
-
-// 		var obtNum = $("#ingreseNumero").val();
-// 		localStorage.setItem("celular", obtNum);
-
-// 		var rutaVeri = local.href.indexOf("code.html");
-// 		if (rutaVeri < 0) {
-// 			entra = false;
-// 		}
-// 		else{
-// 		$("#next1").unbind("click");
-// 		}
-// 	}
-// });
-
 
 
 
