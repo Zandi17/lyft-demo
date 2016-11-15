@@ -41,9 +41,7 @@ var funcionExito = function(posicion) {
     $("#direccion").text(dir);
     });
 };
-<<<<<<< HEAD
 
-=======
     var buscar = function(buscar){
     var input = document.getElementById("inputBuscar");
     var searchBox = new google.maps.places.SearchBox(input);
@@ -55,8 +53,6 @@ var funcionExito = function(posicion) {
     }
     $("#buscar").click(buscar);
 
-    
->>>>>>> master
 var funcionError = function (error) {
 	alert("Lo sentimos no encontramos tu ubicación.");
 };
@@ -67,25 +63,6 @@ $('.button-collapse').sideNav({
     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
     draggable: true // Choose whether you can drag to open on touch screens
 });
-<<<<<<< HEAD
-    $("#buscar").on("click", function () {
-        GMaps.geocode({
-            address: $('#address').val(),
-            callback: function(results, status) {
-                if (status == 'OK') {
-                var latlng = results[0].geometry.location;
-                map.setCenter(latlng.lat(), latlng.lng());
-                map.addMarker({
-                    lat: latlng.lat(),
-                    lng: latlng.lng()
-                });
-                }
-            }
-        });
-    });
-$(document).ready(cargarPagina);
-
-=======
 
 $(document).ready(cargarPagina);
 
