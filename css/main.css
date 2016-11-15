@@ -113,7 +113,15 @@ a{
 	color: white;
 	left: 3rem;
 }
-         
+.bg-nav{
+	background-color: #f3038e;
+}
+.logo1{
+	height: 2rem;
+	left: 3rem;
+	padding-left: 44%;
+    height: 26px;
+}       
 footer{
     background-color: #f3038e;
     position: absolute;
