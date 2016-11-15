@@ -19,16 +19,15 @@ $(document).ready(function() {
     		},
 
     	},
+        submitHandler: function() {
+        window.localStorage.setItem("codigo", Math.floor( Math.random() * 4000 )+1000 )
+        alert("Tu código es " + window.localStorage.getItem("codigo"));
+        }
     });
-    // submitHandler: function() {
-
-    // }
 
     $("#btnext1").on("click", function(){
         $("#formulario").submit();
             if($("#ingreseNumero").val().length == 9){
-                window.localStorage.setItem("codigo", Math.floor( Math.random() * 4000 )+1000 )
-                alert("Tu código es " + window.localStorage.getItem("codigo"));
                 window.localStorage.setItem("celular", $("#ingreseNumero").val());
                 window.location.href = "code.html";
             }

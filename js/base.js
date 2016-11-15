@@ -1,4 +1,4 @@
-(function () {
+$(document).ready(function(){
     var takePicture = document.querySelector("#take-picture"),
         showPicture = document.querySelector("#show-picture");
 
@@ -16,9 +16,6 @@
 
                     // Establecer ObjectURL como img src 
                     showPicture.src = imgURL;
-
-                    // // Revocar ObjectURL
-                    // URL.revokeObjectURL(imgURL);
                 }
                 catch (e) {
                     try {
@@ -40,4 +37,4 @@
             }
         };
     }
-})();
+});
