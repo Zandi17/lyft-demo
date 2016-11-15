@@ -41,7 +41,7 @@ var funcionExito = function(posicion) {
     $("#direccion").text(dir);
     });
 };
-    var funcionbuscar = function(buscar){
+    var buscar = function(buscar){
     var input = document.getElementById("inputBuscar");
     var searchBox = new google.maps.places.SearchBox(input);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input); 
@@ -50,7 +50,9 @@ var funcionExito = function(posicion) {
     searchBox.setBounds(map.getBounds());
     });
     }
+    $("#buscar").click(buscar);
 
+    
 var funcionError = function (error) {
 	alert("Lo sentimos no encontramos tu ubicación.");
 };
