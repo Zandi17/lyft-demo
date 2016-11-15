@@ -40,7 +40,6 @@ $(document).ready(function() {
     $("#celular").text(window.localStorage.getItem("celular"));
 
     $("#btnext2").on("click", function(){
-        $("#digito").submit();
             var digi1 = $("#digito1").val();
             var digi2 = $("#digito2").val();
             var digi3 = $("#digito3").val();

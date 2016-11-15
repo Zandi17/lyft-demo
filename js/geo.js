@@ -1,9 +1,10 @@
 $(document).ready(function() {
+    var map,lon,lat;
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(posicion) {
-           var lat = posicion.coords.latitude;
-           var lon = posicion.coords.longitude;
-           var map = new GMaps({
+            lat = posicion.coords.latitude;
+            lon = posicion.coords.longitude;
+            map = new GMaps({
                 div: "#mapa",
                 lat: lat,
                 lng: lon, 
@@ -20,33 +21,44 @@ $(document).ready(function() {
             });
         });
     };
-    // var content = $("#direccion");
-    // var dir = "";
-    // var latlng = new google.maps.LatLng(lat, lon);
-    // geocoder = new google.maps.Geocoder();
-    // geocoder.geocode({"latLng": latlng}, function(resultado, estado){
-    //     if (estado == google.maps.GeocoderStatus.OK){
-    //         if (resultado[0]){
-    //             dir = resultado[0].formatted_address;
-    //         }
-    //         else{
-    //             dir = "No se ha podido obtener ninguna dirección en esas coordenadas.";
-    //         }
-    //     }
-    //     else{
-    //         dir = "El Servicio de Codificación Geográfica ha fallado con el siguiente error: " + estado;
-    //     }
-    //     window.localStorage.setItem("direccion",dir)
-    //     content.text(window.localStorage.getItem("direccion"));
-    // });
 
     
-     $('.button-collapse').sideNav({
-      menuWidth: 300, // Default is 240
-      edge: 'left', // Choose the horizontal origin
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true // Choose whether you can drag to open on touch screens
+    $("#buscar").on("click", function () {
+        GMaps.geocode({
+            address: $('#address').val(),
+            callback: function(results, status) {
+                if (status == 'OK') {
+                var latlng = results[0].geometry.location;
+                map.setCenter(latlng.lat(), latlng.lng());
+                map.addMarker({
+                    lat: latlng.lat(),
+                    lng: latlng.lng()
+                });
+                }
+            }
+        });
+    });
+   
+    $("#direccion").text(function(){
+        var dir = "";
+        var latlng = new google.maps.LatLng(lat, lon);
+        geocoder = new google.maps.Geocoder();
+        geocoder.geocode({"latLng": latlng}, function(results, status){
+        if (status == google.maps.GeocoderStatus.OK) {
+            if (results[0]) {
+                dir = "<p><strong>Dirección: </strong>" + results[0].formatted_address + "</p>";
+            } else {
+                dir = "<p>No se ha podido obtener ninguna dirección en esas coordenadas.</p>";
+            }
+        } 
+            content.text = "<p><strong>Latitud:</strong> " + lat + "</p><p><strong>Longitud:</strong> " + lon + "</p>" + dir;
+        });
+    });
+    
+    $('.button-collapse').sideNav({
+          menuWidth: 300, // Default is 240
+          edge: 'left', // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true // Choose whether you can drag to open on touch screens
     });
 });
-
-
