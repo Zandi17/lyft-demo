@@ -108,7 +108,7 @@ a{
 #direccion{
 	position: absolute;
 	bottom: 70px;
-	z-index: 999;
+	z-index: 100;
 	background-color: #cf2b48;
 	color: white;
 	left: 3rem;
