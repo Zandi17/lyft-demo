@@ -2,37 +2,72 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Camera API</title>
-        <link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
+        <meta name="viewport" content="width=device-width, minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <title>Lyft</title>
     </head>
 
     <body>
+        <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a href="perfil.html"><h5>Cancel</h5></a>
+                    </div>
+                    <div class="col-xs-4 text-center"><h5>Edit profile</h5></div>
+                    <div class="col-xs-4 text-right"><a href="perfil.html"><h5 id="done">Done</h5></a></div>
+                </div>
+            </div>
+        </header>
+            <div class="container-fluid">
 
-        <div class="container">
-            <h1>Camera API</h1>
+                <section class="main-content">
+                    <p>
+                        <input type="file" id="take-picture" accept="image/*">
+                    </p>
 
-            <section class="main-content">
-                <p>A demo of the Camera API, currently implemented in Firefox and Google Chrome on Android. Choose to take a picture with your device's camera and a preview will be shown through createObjectURL or a FileReader object (choosing local files supported too).</p>
-                
-                <p>
-                    <input type="file" id="take-picture" accept="image/*">
-                </p>
+                </section>
 
-                <h2>Preview:</h2>
+            </div>
+
+            <h2>Preview:</h2>
+
                 <p>
                     <img src="about:blank" alt="" id="show-picture">
                 </p>
-
                 <p id="error"></p>
-
-            </section>
-
-            <p class="footer">All the code is available in the <a href="https://github.com/robnyman/robnyman.github.com/tree/master/camera-api">Camera API repository on GitHub</a>.</p>
-        </div>
-
-
+        
+<form>
+                <div class="edit-form row">
+                    <div class="col-md-6 col-xs-6">
+                        <div class="form-group">
+                            <label>NAME</label>
+                            <input id="name" type="text" class="form-control" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div class="form-group">
+                            <label>LASTNAME</label>
+                            <input id="lastname" type="text" class="form-control" placeholder="Lastname">
+                        </div>
+                    </div>
+                  
+                    <div class="col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>EMAIL</label>
+                            <input id="email" type="email" class="form-control" placeholder="Email">
+                          </div>
+                    </div>                
+                </div>
+            </form>
+        
         <script src="js/base.js"></script>
 
 
     </body>
 </html>
+
+
+
