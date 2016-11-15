@@ -19,15 +19,16 @@ $(document).ready(function() {
     		},
 
     	},
-        submitHandler: function() {
-        window.localStorage.setItem("codigo", Math.floor( Math.random() * 4000 )+1000 )
-        alert("Tu código es " + window.localStorage.getItem("codigo")  + " ");
-        }
     });
+    // submitHandler: function() {
+
+    // }
 
     $("#btnext1").on("click", function(){
         $("#formulario").submit();
             if($("#ingreseNumero").val().length == 9){
+                window.localStorage.setItem("codigo", Math.floor( Math.random() * 4000 )+1000 )
+                alert("Tu código es " + window.localStorage.getItem("codigo"));
                 window.localStorage.setItem("celular", $("#ingreseNumero").val());
                 window.location.href = "code.html";
             }
@@ -40,13 +41,15 @@ $(document).ready(function() {
     $("#celular").text(window.localStorage.getItem("celular"));
 
     $("#btnext2").on("click", function(){
-            var digi1 = $("#digito1").eq(0).val();
-            var digi2 = $("#digito2").eq(1).val();
-            var digi3 = $("#digito3").eq(2).val();
-            var digi4 = $("#digito4").eq(3).val();                
-            var digitos= digi1 + digi2 + digi3+digi4;
-            if(digitos == window.localStorage.getItem("codigo")){
-            window.location.href = "register.html";
+            var digi1 = $("#digito1").val();
+            var digi2 = $("#digito2").val();
+            var digi3 = $("#digito3").val();
+            var digi4 = $("#digito4").val();                
+            var digitos= digi1 + digi2 + digi3+ digi4;
+            if(digitos === window.localStorage.getItem("codigo")){
+                window.location.href = "register.html";
+        } else {
+            alert("Code incorrect");
         }
     });
     $("#form").validate({
