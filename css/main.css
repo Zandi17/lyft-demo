@@ -105,6 +105,15 @@ a{
 	position: absolute;
 	bottom: 75px;
 }
+#direccion{
+	position: absolute;
+	bottom: 70px;
+	z-index: 999;
+	background-color: #cf2b48;
+	color: white;
+	left: 3rem;
+}
+}
          
 footer{
     background-color: #f3038e;
