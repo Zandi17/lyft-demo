@@ -2,6 +2,7 @@ var cargarPagina = function() {
 	if (navigator.geolocation) { 
 		navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
 	}
+
 };
 
 var funcionExito = function(posicion) {
@@ -41,10 +42,14 @@ var funcionExito = function(posicion) {
     $("#direccion").text(dir);
     });
 };
+<<<<<<< HEAD
 
     var buscar = function(buscar){
+=======
+var buscar = function(buscar){
+>>>>>>> master
     var input = document.getElementById("inputBuscar");
-    var searchBox = new google.maps.places.SearchBox(input);
+    var searchBox = new google.maps.places.searchBox(input);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input); 
 
     map.addListener('bounds_changed', function() {
@@ -65,6 +70,7 @@ $('.button-collapse').sideNav({
 });
 
 $(document).ready(cargarPagina);
+<<<<<<< HEAD
 
 //   var markers = [];
 //   // Listen for the event fired when the user selects a prediction and retrieve
@@ -111,4 +117,6 @@ $(document).ready(cargarPagina);
 //     map.fitBounds(bounds);
 //   });
 // }
+>>>>>>> master
+=======
 >>>>>>> master
