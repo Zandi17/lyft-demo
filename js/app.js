@@ -40,10 +40,10 @@ $(document).ready(function() {
     $("#celular").text(window.localStorage.getItem("celular"));
 
     $("#btnext2").on("click", function(){
-            var digi1 = $("#digito1").val();
-            var digi2 = $("#digito2").val();
-            var digi3 = $("#digito3").val();
-            var digi4 = $("#digito4").val();                
+            var digi1 = $("#digito1").eq(0).val();
+            var digi2 = $("#digito2").eq(1).val();
+            var digi3 = $("#digito3").eq(2).val();
+            var digi4 = $("#digito4").eq(3).val();                
             var digitos= digi1 + digi2 + digi3+digi4;
             if(digitos == window.localStorage.getItem("codigo")){
             window.location.href = "register.html";
