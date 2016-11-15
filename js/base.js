@@ -17,8 +17,8 @@
                     // Establecer ObjectURL como img src 
                     showPicture.src = imgURL;
 
-                    // Revocar ObjectURL
-                    URL.revokeObjectURL(imgURL);
+                    // // Revocar ObjectURL
+                    // URL.revokeObjectURL(imgURL);
                 }
                 catch (e) {
                     try {
